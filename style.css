@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root {
+    --orange: #ff7800;
+    --black: #130f40;
+    --light-color: #666;
+    --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    --border: .2rem solid rgba(0, 0, 0, .1);
+    --outline: .1rem solid rgba(0, 0, 0, .1);
+    --outline-hover: .2rem solid var(--black);
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+body {
+    background: #eee;
+}
+
+
+
+
+section {
+    padding: 2rem 9%;
+}
+
+
+.heading {
+    text-align: center;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+    font-size: 3.5rem;
+    color: var(--black);
+}
+
+
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    border: .2rem solid var(--black);
+    color: var(--black);
+    cursor: pointer;
+    background: none;
+    transition: .2s linear;
+}
+
+.btn:hover {
+    background: var(--orange);
+    color: #fff;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    background: #eee;
+    box-shadow: var(--box-shadow);
+}
+
+.header .logo {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: var(--black);
+    margin-left: -50px;
+}
+
+.header .logo i {
+    color: var(--orange);
+}
+
+.header .navbar a {
+    font-size: 1.7rem;
+    margin: 0 1rem;
+    color: var(--black);
+}
+
+.header .navbar a:hover {
+    color: var(--orange);
+}
+
+.header .icons div {
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: .5rem;
+    background: #eee;
+    color: var(--black);
+    font-size: 2rem;
+    margin-left: .3rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+.header .icons div:hover {
+    background: var(--orange);
+    color: #fff;
+}
+
+#menu-btn {
+    display: none;
+}
+
+
+.home {
+    background-position: center;
+    background-size: cover;
+    padding-top: 20rem;
+    padding-bottom: 10rem;
+    margin-top: 70px;
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://img.freepik.com/free-photo/abundance-healthy-food-choices-supermarket-aisle-generated-by-ai_188544-42447.jpg?t=st=1701164204~exp=1701167804~hmac=11dada4f0a95f2a5a5fd378507ac21bb76ab600df6cbe92875f902cef2717ce7&w=1380);
+    box-shadow: 3px 0px 10px;
+    text-align: center;
+}
+
+
+.home .content {
+    text-align: center;
+    width: 100%;
+}
+
+.home .content h3 {
+    color: rgb(2, 2, 2);
+    font-size: 10rem;
+}
+
+.home .content h3 span {
+    color: green;
+}
+
+.header .headlogo h1 span {
+    color: green;
+}
+
+.home .content p {
+    color: rgb(0, 0, 0);
+    font-size: 1.7rem;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
+
+.row {
+    width: 100%;
+    height: 450px;
+
+    display: flex;
+    justify-content: space-around
+}
+
+.col {
+    background: #fff;
+    width: 250px;
+    height: 400px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 3px 10px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 3rem 2rem;
+    outline-offset: -1rem;
+    outline: var(--outline);
+    box-shadow: var(--box-shadow);
+    transition: .2s linear;
+}
+
+.col:hover {
+    outline-offset: 0rem;
+    outline: var(--outline-hover);
+}
+
+.row img {
+    height: 19rem;
+    width: 20rem;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+button {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    border: .2rem solid var(--black);
+    color: var(--black);
+    cursor: pointer;
+    background: none;
+    transition: .2s linear;
+
+}
+
+button:hover {
+    background: var(--orange);
+    color: #fff;
+}
+
+
+
+
+.footer {
+    background: #fff;
+    box-shadow: -3px 0px 10px;
+}
+
+.footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+
+.footer .box-container .box h3 {
+    font-size: 2.5rem;
+    color: var(--black);
+    padding: 1rem 0;
+    margin-left: -50px;
+}
+
+.footer .box-container .box h3 i {
+    color: var(--orange);
+}
+
+.footer .box-container .box .links {
+    display: block;
+    font-size: 1.5rem;
+    color: var(--light-color);
+    padding: 1rem 0;
+
+}
+
+.footer .box-container .box .links i {
+    color: var(--orange);
+    padding-right: .5rem;
+    transition: .2s linear;
+}
+
+.footer .box-container .box .links:hover i {
+    padding-right: 2rem;
+
+}
+
+
+
+
+.footer .box-container .box .share a {
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    border-radius: .5rem;
+    font-size: 2rem;
+    color: var(--black);
+    margin-right: .2rem;
+    background: #eee;
+    text-align: center;
+    transition: .2s linear;
+}
+
+.footer .box-container .box .share a:hover {
+    background: var(--orange);
+    color: #fff;
+}
+
+
+
+@media screen and (max-width:400px) {
+
+    .header {
+        width: 435px;
+        margin: 0;
+        padding: 5px;
+        
+    }
+
+    .header .logo {
+        font-size: 1.5rem;
+        margin-left: 10px;
+    }
+
+    .header .navbar a {
+        font-size: 1.5rem;
+        margin: 0;
+        padding: 2px;
+
+    }
+
+    .header .navbar {
+        margin-right: 70px;
+    }
+
+    .home .content h3 {
+        font-size: 3rem;
+        margin-top: -40px;
+    }
+
+    .row {
+        width: 400px;
+        height: 1300px;
+        display: block;
+    }
+
+    .col {
+        height: 300px;
+        margin-left: 40px
+    }
+
+    .row img {
+        width: 50%;
+    }
+
+    .footer .box-container {
+        margin-left: 30px;
+    }
+.footer{
+    width: 435px;
+}
+    .home {
+        margin-top: 0;
+        width: 435px;
+        height: 200px;
+       margin-top: 30px;
+        padding-top: 10rem;
+        padding-bottom: 5rem;
+    }
+}
